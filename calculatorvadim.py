@@ -1,4 +1,8 @@
-"""Let's calculate"""
+"""
+This is my first experience creating a simple python calculator module.
+
+Let's calculate!
+"""
 
 __version__ = "0.0.1"
 
