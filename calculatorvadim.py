@@ -4,7 +4,7 @@ This is my first experience creating a simple python calculator module.
 Let's calculate!
 """
 
-__version__ = "0.0.3"
+__version__ = "0.0.4"
 
 
 class Calculator:

@@ -20,19 +20,19 @@ The technology stack for this project includes `Python` for building the package
 
 You can run any of the commands below to install the package.
 
-- To install the package from PyPI
+### To install the package from PyPI
 
 ```shell
 $ pip install calculatorvadim
 ```
 
-- To install from github
+### To install from github
 
 ```shell
 $ pip install git+https://github.com/vadimiljin/calculatorvadim.git
 ```
 
-- To get the calculator image from dockerhub 
+### To get the calculator image from docker hub
 
 ```shell
 $ docker pull iljinvadim/calculatorvadim
