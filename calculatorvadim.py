@@ -4,7 +4,8 @@ This is my first experience creating a simple python calculator module.
 Let's calculate!
 """
 
-__version__ = "0.0.2"
+__version__ = "0.0.3"
+
 
 class Calculator:
     """
@@ -62,7 +63,6 @@ class Calculator:
         self._memory_value = self._memory_value ** (1.0 / input_value)
         return self._memory_value
 
-
     def reset(self) -> float:
         """This method will set the value stored in memory to zero."""
         self._memory_value = 0
@@ -70,7 +70,9 @@ class Calculator:
 
     def _validate_memory_value(self, new_value: float) -> float:
         if not isinstance(new_value, (int, float)):
-            raise ValueError("Please enter a valid number for the calculator's memory value!")
+            raise ValueError(
+                "Please enter a valid number for the calculator's memory value!"
+            )
         self._memory_value = new_value
         return self._memory_value
 
@@ -83,7 +85,6 @@ class Calculator:
         if input_value == 0:
             raise ZeroDivisionError("Dividing by zero is not a valid operation!")
         return input_value
-
 
     def _complex_number_for_root(self, input_value: float) -> float:
         if self._memory_value < 0:
